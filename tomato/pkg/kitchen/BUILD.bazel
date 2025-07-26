@@ -1,0 +1,8 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "kitchen",
+    srcs = ["table.go"],
+    importpath = "github.com/AAspCodes/caprese/tomato/pkg/kitchen",
+    visibility = ["//visibility:public"],
+)

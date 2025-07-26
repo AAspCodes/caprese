@@ -1,0 +1,13 @@
+load("@rules_go//go:def.bzl", "go_binary")
+
+go_binary(
+    name = "tomato",
+    srcs = ["cmd/main.go"],
+    importpath = "caprese/tomato/cmd",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//tomato/internal/cut",
+        "//tomato/pkg/garden",
+        "//tomato/pkg/kitchen"
+    ]
+)

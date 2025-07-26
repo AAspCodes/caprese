@@ -1,2 +1,5 @@
 
-
+bazel-bin
+bazel-caprese
+bazel-out
+bazel-testlogs
